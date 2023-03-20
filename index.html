@@ -1,0 +1,545 @@
+<html>
+       <head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	           Coinbase
+	        </title>
+				    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+					<link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+					<link rel="stylesheet" href="css/bootstrap.min.css">
+					<link rel="stylesheet" href="css/bootstrap.css">
+					<link rel="stylesheet" href="css/style.css">
+					
+					<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+					<link rel="stylesheet" href="css/material-design-iconic-font.css">
+					<link rel="stylesheet" href="fonts/font-awesome.min.css">						
+					<link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+				   <link href="@import url('https://fonts.googleapis.com/css?family=Patua+One');" rel="stylesheet">
+				   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	    </head>
+	
+	<body onchange="init()">
+<!-----------------------navber side------------ --> 
+		<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+			<div class="container">
+				<div class="navbar-header">
+			<!-----logo------------ -->
+					<a class="navbar-brand" href="#"> 	
+						<svg width="122" height="28" viewBox="0 0 122 28"><g fill="none" fill-rule="evenodd"><path d="M8.795 17.026a7.736 7.736 0 0 0 1.251 1.93c-1.11.599-2.272.866-3.54.866-3.77 0-6.506-2.49-6.506-6.464 0-4.002 2.876-6.491 6.506-6.491 1.292 0 2.31.28 3.337.83A7.85 7.85 0 0 0 8.67 9.692a5.079 5.079 0 0 0-1.914-.362c-2.233 0-3.965 1.427-3.965 4.03 0 2.462 1.676 4.029 4.078 4.029.688 0 1.323-.125 1.926-.362zm7.582-10.16c3.713 0 6.393 2.631 6.393 6.492 0 3.834-2.68 6.464-6.393 6.464-3.685 0-6.366-2.63-6.366-6.464 0-3.86 2.68-6.491 6.366-6.491zm0 2.379c-2.066 0-3.574 1.595-3.574 4.113 0 2.491 1.508 4.085 3.574 4.085 2.122 0 3.602-1.594 3.602-4.085 0-2.518-1.48-4.113-3.602-4.113zm8.153 10.297V7.146h2.763v12.396H24.53zm-.364-16.201c0-.951.81-1.707 1.731-1.707.922 0 1.732.756 1.732 1.707 0 .98-.81 1.763-1.732 1.763-.92 0-1.731-.784-1.731-1.763zm5.538 4.59c1.731-.672 3.854-1.064 5.668-1.064 3.155 0 5.166 1.203 5.166 4.7v7.975h-2.736V11.82c0-1.791-1.117-2.435-2.653-2.435-.978 0-1.954.14-2.68.364v9.793h-2.765V7.93zM42.852.514h2.764v6.968c.586-.308 1.73-.616 2.82-.616 3.573 0 6.254 2.294 6.254 6.268 0 4-2.653 6.687-7.23 6.687a13.72 13.72 0 0 1-4.608-.812V.515zm2.764 16.677c.53.167 1.229.251 1.926.251 2.54 0 4.356-1.398 4.356-4.253 0-2.406-1.703-3.833-3.797-3.833-1.089 0-1.927.28-2.485.588v7.247zm17.058-5.96c0-1.344-1.006-1.959-2.373-1.959-1.424 0-2.541.42-3.574 1.007V7.873c1.088-.614 2.484-1.006 4.02-1.006 2.708 0 4.635 1.119 4.635 4.224v8.199c-1.173.308-2.848.504-4.243.504-3.211 0-5.557-.98-5.557-3.778 0-2.518 2.15-3.748 5.723-3.748h1.369V11.23zm0 2.882H61.5c-1.927 0-3.183.559-3.183 1.818 0 1.288 1.173 1.791 2.848 1.791.42 0 1.006-.056 1.508-.14v-3.469zm4.718 2.07c1.145.868 2.512 1.4 3.768 1.4 1.23 0 2.04-.42 2.04-1.4 0-1.007-.727-1.371-2.318-1.79-2.569-.588-3.658-1.623-3.658-3.778 0-2.519 1.899-3.75 4.412-3.75 1.395 0 2.512.309 3.545.952v2.546c-1.088-.783-2.15-1.259-3.461-1.259-1.201 0-1.843.588-1.843 1.4 0 .81.53 1.23 1.954 1.622 2.82.616 4.049 1.68 4.049 3.918 0 2.602-1.983 3.777-4.663 3.777-1.452 0-2.904-.391-3.825-1.007v-2.63zm12.27-2.21v.056c.168 2.21 2.066 3.413 3.993 3.413 1.703 0 2.932-.392 4.16-1.203v2.435c-1.117.783-2.764 1.147-4.355 1.147-3.853 0-6.478-2.463-6.478-6.38 0-3.945 2.568-6.575 5.975-6.575 3.601 0 5.304 2.322 5.304 5.707v1.4h-8.598zm6.003-1.79c-.056-1.932-1.005-2.995-2.792-2.995-1.591 0-2.764 1.12-3.127 2.994h5.919z" fill="#FFF"></path></g>
+					   </svg>
+					</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="profile-img"><img width="30px;" src="img/sajal.png"  class="img-circle"></li>
+       <!-----profile-dropdown------------ -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rich herd<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					<li id ="menu-bar" onclick="menu()"><span class="glyphicon glyphicon-list" aria-hidden="true"></span></li>
+				</ul>			   
+	        </div>
+	    </nav>
+<!----------main section 2nd nav-section------------ -->
+        <div class="tabbable-panel second-nav">
+            <div  class="bg" id="bg">
+			    <div class="nav-section-m" id="nav-section-m">
+					<div class="tabbable-line">
+						<ul class="nav nav-tabs ul container">
+							<li>
+								<span onclick="remove()" class="glyphicon glyphicon-remove" aria-hidden="true"></span>  
+							</li>				
+							<li  class="active"><a data-toggle="tab" href="#menu1"><i class="zmdi zmdi-view-dashboard"></i> Dashbord</a></li>
+							<li><a data-toggle="tab" href="#menu2"> <i class="zmdi zmdi-shopping-cart-plus"></i></i> Buy/Sell</a></li>
+							<li><a data-toggle="tab" href="#menu3"><i class="zmdi zmdi-balance-wallet"></i> Accounts</a></li>
+							<li><a data-toggle="tab" href="#menu4"><i class="zmdi zmdi-case"></i> Tools</a></li>
+							<li><a data-toggle="tab" href="#menu5"> <i class="zmdi zmdi-settings"></i> Setting</a></li>								       
+						</ul>
+										
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-content second-nav-content">
+            <div id="menu1" class="tab-pane fade in active menu-3 ">
+				<div class="container">
+				    <div class="container-fluid">
+				        <div class="row accound">
+							<div class="title">
+					<!--------head title -->
+								<h4>Your Accounts</h4>
+							</div>
+			<!-- Side manu -->
+							<div class="col-md-4" title="Scroll Down">
+								<ul class="nav nav-pills nav-stacked" id="myTabs">
+						<!-- side manu bitcoin -->
+									<li class="active">
+										<a href="#bitcoin" data-toggle="pill">
+											<div class="media">
+												<div class="media-left">   
+													<img width="30px" class="media-object" src="img/tab1.png" alt="...">	
+												</div>
+												<div class="media-body">
+													<h4 class="media-heading">BTC Wallet</h4>
+													<p>0.2534 BTC ≈ <span class="xd">$4,309.68</span></p>
+													<div class="button-group" role="group" aria-label="...">
+														<button  onclick="send()"  type="button" class="btn btn-default"><i class="fa fa-send" style="font-size:12px"></i> Send</button>
+														<button style="margin-left:5px;" type="button" class="btn btn-default"><i class="fa fa-qrcode" style="font-size:12px"></i> Receive</button>
+														<button style="margin-left:5px;padding-top:7px;padding-bottom:7px;padding-left:16px;padding-right:16px" type="button" class="btn btn-default"><i class="fa fa-ellipsis-v" style="font-size:16px;transform: rotate(90deg);"></i></button>
+													</div>	
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+							<!-- side manu bch -->
+										<a href="#bch" data-toggle="pill">
+											<div class="media">
+												<div class="media-left">   
+													<img width="30px" class="media-object" src="img/tab3.png" alt="...">	
+												</div>
+												<div class="media-body">
+													<h4 class="media-heading">BCH Wallet</h4>
+													<p>0.0000 BCH ≈ <span class="xd">$0.00</span></p>
+													<div class="button-group" role="group" aria-label="...">
+														<button onclick="send()" type="button" class="btn btn-default"><i class="fa fa-send" style="font-size:12px"></i> Send</button>
+														<button style="margin-left:5px;" type="button" class="btn btn-default"><i class="fa fa-qrcode" style="font-size:12px"></i> Receive</button>
+														<button style="margin-left:5px;padding-top:7px;padding-bottom:7px;padding-left:16px;padding-right:16px" type="button" class="btn btn-default"><i class="fa fa-ellipsis-v" style="font-size:16px;transform: rotate(90deg);"></i></button>
+													</div>	
+												</div>
+											</div>
+										</a>
+									</li>
+							<!-- side manu ethereum -->
+									<li>
+										<a href="#eth" data-toggle="pill">
+											<div class="media">
+												<div class="media-left">   
+													<img width="30px" class="media-object" src="img/tab2.png" alt="...">	
+												</div>
+												<div class="media-body">
+													<h4 class="media-heading">ETH Wallet</h4>
+													<p>1.0022 ETH ≈ <span class="xd">$799.21</span></p>
+													<div class="button-group" role="group" aria-label="...">
+														<button onclick="send()" type="button" class="btn btn-default"><i class="fa fa-send" style="font-size:12px"></i> Send</button>
+														<button style="margin-left:5px;" type="button" class="btn btn-default"><i class="fa fa-qrcode" style="font-size:12px"></i> Receive</button>
+														<button style="margin-left:5px;padding-top:7px;padding-bottom:7px;padding-left:16px;padding-right:16px" type="button" class="btn btn-default"><i class="fa fa-ellipsis-v" style="font-size:16px;transform: rotate(90deg);"></i></button>
+													</div>	
+												</div>
+											</div>
+										</a>
+									</li>
+							<!-- side manu litecoin -->
+									<li>
+										<a href="#ltc" data-toggle="pill">
+											<div class="media">
+												<div class="media-left">   
+													<img width="30px" class="media-object" src="img/tab-3.png" alt="...">	
+												</div>
+												<div class="media-body">
+													<h4 class="media-heading">LTC Wallet</h4>
+													<p>4,9120 LTC ≈ <span class="xd">$1,623.96</span></p>
+													<div class="button-group" role="group" aria-label="...">
+														<button onclick="send()" type="button" class="btn btn-default"><i class="fa fa-send" style="font-size:12px"></i> Send</button>
+														<button  style="margin-left:5px;" type="button" class="btn btn-default"><i class="fa fa-qrcode" style="font-size:12px"></i> Receive</button>
+														<button style="margin-left:5px;padding-top:7px;padding-bottom:7px;padding-left:16px;padding-right:16px" type="button" class="btn btn-default"><i class="fa fa-ellipsis-v" style="font-size:16px;transform: rotate(90deg);"></i></button>
+													</div>	
+												</div>
+											</div>
+										</a>
+									</li>
+									
+							<!-- side manu vault -->
+									<li> 
+										<a href="#vault" data-toggle="pill">
+											<div class="media">
+												<div class="media-left">   
+													<img width="30px" class="media-object" src="img/tab-4.png" alt="...">	
+												</div>
+												<div class="media-body">
+													<h4 class="media-heading">Vault Account</h4>
+													<p>0.28017732 VLT ≈ <span class="xd">$6,202.08</span></p>
+													<div class="button-group" role="group" aria-label="...">
+														<button onclick="send()" type="button" class="btn btn-default"><i class="fa fa-send" style="font-size:12px"></i> Send</button>
+														<button style="margin-left:5px;" type="button" class="btn btn-default"><i class="fa fa-qrcode" style="font-size:12px"></i> Receive</button>
+														<button style="margin-left:5px;padding-top:7px;padding-bottom:7px;padding-left:16px;padding-right:16px" type="button" class="btn btn-default"><i class="fa fa-ellipsis-v" style="font-size:16px;transform: rotate(90deg);"></i></button>
+													</div>	
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+						<!-- side manu create account -->
+								<li class="new">
+									<a href="#">
+									<h4><center><i class="fa fa-plus" style="font-size:15px"></i> New Account</center></h4>
+									</a>
+								</li>
+							</div>
+				<!--right site  all history -->
+							<div class="col-md-8" >
+								<div class="row tran">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<h5 style="color:rgba(0,0,0,0.5)">Transactions</h5>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="inner-addon right-addon search-icon">
+											<i class="glyphicon glyphicon-search "></i>
+											<input type="text" placeholder="Search" class="form-control search-box" />
+										</div>
+									</div>
+								</div>	 
+								<div class="tab-content" title="Scroll Down">
+							<!--right site  bitcoin history -->
+									<div class="tab-pane active" id="bitcoin">
+										<div class="row coin">
+											<div class="col-md-9 col-xs-6 col-sm-8 coin-left">
+												<ul>
+													<li><time>JUL<br>30</time></li>
+													<li style=""><i class="material-icons">get_app</i><br><br></li>
+													<li>Receive Bitcoin Cash<br>
+														<span class="pandding">Panding</span>    
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-3 col-xs-6 col-sm-4 coin-right">
+												<h5><span id="munis">-</span> 0.00122923 BTC
+												</h5><br><br>
+												<p>-$3.35</p>
+											</div>
+										</div>
+										<div class="row coin">
+											<div class="col-md-9 col-xs-6 col-sm-8 coin-left">
+												<ul>
+													<li><time>JUL<br>30</time></li>
+													<li style=""><i class="material-icons">get_app</i><br><br></li>
+													<li>Receive Bitcoin Cash<br>
+														<span class="pandding">Panding</span>    
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-3 col-xs-6 col-sm-4 coin-right">
+												<h5><span id="munis">-</span> 0.00122923 BTC
+												</h5><br><br>
+												<p>-$3.35</p>
+											</div>
+										</div>
+										<div class="row coin">
+											<div class="col-md-9 col-xs-6 col-sm-8 coin-left">
+												<ul>
+													<li><time>JUL<br>30</time></li>
+													<li style=""><i class="material-icons">get_app</i><br><br></li>
+													<li>Receive Bitcoin Cash<br>
+														<span class="pandding">Panding</span>    
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-3 col-xs-6 col-sm-4 coin-right">
+												<h5><span id="munis">-</span> 0.00122923 BTC
+												</h5><br><br>
+												<p>-$3.35</p>
+											</div>
+										</div>
+										<div class="row coin">
+											<div class="col-md-9 col-xs-6 col-sm-8 coin-left">
+												<ul>
+													<li><time>JUL<br>30</time></li>
+													<li style=""><i class="material-icons">get_app</i><br><br></li>
+													<li>Receive Bitcoin Cash<br>
+														<span class="pandding">Panding</span>    
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-3 col-xs-6 col-sm-4 coin-right">
+												<h5><span id="munis">-</span> 0.00122923 BTC
+												</h5><br><br>
+												<p>-$3.35</p>
+											</div>
+										</div>
+										<div class="row coin">
+											<div class="col-md-9 col-xs-6 col-sm-8 coin-left">
+												<ul>
+													<li><time>JUL<br>30</time></li>
+													<li style=""><i class="material-icons">get_app</i><br><br></li>
+													<li>Receive Bitcoin Cash<br>
+														<span class="pandding">Panding</span>    
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-3 col-xs-6 col-sm-4 coin-right">
+												<h5><span id="munis">-</span> 0.00122923 BTC
+												</h5><br><br>
+												<p>-$3.35</p>
+											</div>
+										</div>
+										
+									</div>
+							<!--right site  bch history -->
+									<div class="tab-pane" id="bch">
+										<div class="tab-pane" id="bchcoin">
+											<h5>Have BCH history</h5>
+										</div>
+										
+									</div>
+						    <!--right site ethereum  history -->
+									<div class="tab-pane" id="eth">
+										<div class="tab-pane" id="ethereum">
+											<h5>Have ETH history</h5>
+										</div>			
+									</div>
+						    <!--right site  litecoin history -->
+									<div class="tab-pane" id="ltc">
+										<div class="tab-pane" id="litecoin">
+											<h5>Have LTC history</h5>
+										</div>
+									</div>
+							<!--right site  vault history -->
+									<div class="tab-pane" id="vault">
+										<div class="tab-pane" id="vault">
+											<h5>Have Vault history</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+				        </div>
+			        </div>
+				</div>  
+			</div>   
+            <div id="menu2" class="tab-pane fade">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Buy and sell</h1>
+						</div>
+					</div> 
+				</div> 
+			</div>   
+            <div id="menu3" class="tab-pane fade ">
+				<div class="container">
+			        <div class="row">
+						<div class="col-md-12">
+							<h1>Your Accounts</h1>
+						</div>
+					</div> 
+                </div>
+			</div> 
+			<div id="menu4" class="tab-pane fade">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Tools</h1>
+						</div>
+					</div> 
+				</div> 
+			</div>
+			<div id="menu5" class="tab-pane fade">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Setting</h1>
+						</div>
+					</div> 
+				</div> 
+			</div>
+		</div><br><br> <br> 
+	<!----footer----------- -->
+		<div class="container-fluid footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-5">
+						<ul class="left-menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Carrers</a></li>
+							<li><a href="#">Legal & Privacy</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-sm-7">
+						<ul class=" right-menu">
+							<li><a href="#">@2017 Coinbase</a></li>
+							<li><select data-placeholder="Choose a Language...">
+								  <option value="Afrikaans">Afrikaans</option>
+								  <option value="Albanian">Albanian</option>
+								  <option value="Arabic">Arabic</option>
+								  <option value="Armenian">Armenian</option>
+								  <option value="Basque">Basque</option>
+								  <option value="Bengali">Bengali</option>
+								  <option value="Bulgarian">Bulgarian</option>
+								  <option value="Catalan">Catalan</option>
+								  <option value="Cambodian">Cambodian</option>
+								  <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+								  <option value="Croatian">Croatian</option>
+								  <option value="Czech">Czech</option>
+								  <option value="Danish">Danish</option>
+								  <option value="Dutch">Dutch</option>
+								  <option value="English">English</option>
+								  <option value="Estonian">Estonian</option>
+								  <option value="Fiji">Fiji</option>
+								  <option value="Finnish">Finnish</option>
+								  <option value="French">French</option>
+								  <option value="Georgian">Georgian</option>
+								  <option value="German">German</option>
+								  <option value="Greek">Greek</option>
+								  <option value="Gujarati">Gujarati</option>
+								  <option value="Hebrew">Hebrew</option>
+								  <option value="Hindi">Hindi</option>
+								  <option value="Hungarian">Hungarian</option>
+								  <option value="Icelandic">Icelandic</option>
+								  <option value="Indonesian">Indonesian</option>
+								  <option value="Irish">Irish</option>
+								  <option value="Italian">Italian</option>
+								  <option value="Japanese">Japanese</option>
+								  <option value="Javanese">Javanese</option>
+								  <option value="Korean">Korean</option>
+								  <option value="Latin">Latin</option>
+								  <option value="Latvian">Latvian</option>
+								  <option value="Lithuanian">Lithuanian</option>
+								  <option value="Macedonian">Macedonian</option>
+								  <option value="Malay">Malay</option>
+								  <option value="Malayalam">Malayalam</option>
+								  <option value="Maltese">Maltese</option>
+								  <option value="Maori">Maori</option>
+								  <option value="Marathi">Marathi</option>
+								  <option value="Mongolian">Mongolian</option>
+								  <option value="Nepali">Nepali</option>
+								  <option value="Norwegian">Norwegian</option>
+								  <option value="Persian">Persian</option>
+								  <option value="Polish">Polish</option>
+								  <option value="Portuguese">Portuguese</option>
+								  <option value="Punjabi">Punjabi</option>
+								  <option value="Quechua">Quechua</option>
+								  <option value="Romanian">Romanian</option>
+								  <option value="Russian">Russian</option>
+								  <option value="Samoan">Samoan</option>
+								  <option value="Serbian">Serbian</option>
+								  <option value="Slovak">Slovak</option>
+								  <option value="Slovenian">Slovenian</option>
+								  <option value="Spanish">Spanish</option>
+								  <option value="Swahili">Swahili</option>
+								  <option value="Swedish ">Swedish </option>
+								  <option value="Tamil">Tamil</option>
+								  <option value="Tatar">Tatar</option>
+								  <option value="Telugu">Telugu</option>
+								  <option value="Thai">Thai</option>
+								  <option value="Tibetan">Tibetan</option>
+								  <option value="Tonga">Tonga</option>
+								  <option value="Turkish">Turkish</option>
+								  <option value="Ukrainian">Ukrainian</option>
+								  <option value="Urdu">Urdu</option>
+								  <option value="Uzbek">Uzbek</option>
+								  <option value="Vietnamese">Vietnamese</option>
+								  <option value="Welsh">Welsh</option>
+								  <option value="Xhosa">Xhosa</option>
+								</select></li>
+								<li><button type="button" class="btn btn-primary">Need Help ?</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--popup-------------- -->   
+        <div id="myModal" class="modal">
+			<div class="modal-content ">
+				<div class="modal-header">
+				    <h3>Send BTC</h3>
+					<span class="close">&times;</span>	
+				</div>
+				<div class="modal-body">
+				    <div class="row tabbs">
+					    <div class="col-md-12">
+						    <ul class="nav nav-tabs">
+						        <li class="active"><a data-toggle="tab" href="#withdraw">Wallet Address</a></li>
+						        <li><a data-toggle="tab" href="#email">Email Address</a></li>
+                            </ul>
+						</div>
+					</div>
+					<div class="tab-content">
+						<div id="withdraw" class="tab-pane fade in active">
+						    <div class="form-group bank-name">
+								<label for="bank">Recipient</label>
+								<input type="text" class="form-control" id="banki">
+	                        </div>
+							<label for="withdraw">Withdraw From</label>
+							<div class="row coin-history">
+								<div class="col-md-7 col-xs-7 col-sm-7 coin-left">
+									<ul>
+										<li style=""><img width="35px" src="img/tab1.png"></li>
+										<li>BTC Wallet<br></li>
+									</ul>
+								</div>
+								<div class="col-md-5 col-xs-5 col-sm-5 coin-right">
+									<h5> 0.01309596 BTC</h5><br>
+									<p>=$171.70</p>
+								</div>
+							</div><br>
+							<label for="bank">Amount</label>
+							<div class="row ammount">
+							    <div class="col-md-6 col-sm-6 col-xs-6">
+								    <div class="form-group ammount-1">
+								        <input type="text" class="form-control" id="GBP" size="10" value="0" onchange="gbpfunc()" >
+								        <span>GBP</span>
+	                                </div>
+								</div>
+							    <div class="mid">
+								    <center><i class="fa fa-exchange"></i></center>
+								</div>
+							    <div class="col-md-6 col-sm-6 col-xs-6">
+								    <div class="form-group ammount-1">
+								        <input type="text" id="BTC" size="10" class="form-control" value="0" onchange="btcfunc()">
+								        <span>BTC</span>
+	                                </div>
+								</div>
+							</div>
+							<label for="bank">Note</label>
+							<textarea class="form-control" rows="2"  placeholder="Write an optional message"></textarea>
+							<div class="row network">
+							    <div class="col-md-6 col-sm-6 col-xs-6">
+								    <p>Network Fee <i style="color:rgba(0,0,0,0.5);" class="fa fa-question-circle"></i></p>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6 network-btc">
+								     <p>0.00131616 BTC <span>($18.79)</span></p>
+								</div>
+							</div>
+							<div class="row total">
+							    <div class="col-md-6 col-sm-6 col-xs-6">
+								    <p>Total</p>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6 total-btc">
+								    <p>0.01309596 BTC <span>($184.00)</span></p>
+								</div>
+							</div>
+							<a href="#"  type="button" class="btn btmm btn-primary btn-lg  btn-block">Continue</a>
+						</div>
+						<div id="email" class="tab-pane fade">
+						    <h3>Menu 1</h3>
+						    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>	
+				    </div>
+			    </div>
+		    </div>
+		</div>
+         
+
+<!---all javascript link------------ -->
+		    <script src="js/bootstrap.js"></script>
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		    <script src="js/canvasjs.min.js"></script>
+		    <script src="js/bootstrap.min.js"></script>
+		    <script src="js/extarnal.js"></script>
+            
+			
+		   
+	</body>
+</html>
